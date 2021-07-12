@@ -13,7 +13,7 @@ const forecast = (long, lat, callback) => {
         }
         else {
             //callback(undefined, response.body.current.weather_descriptions[0] + '.\nThe temperature is ' + response.body.current.temperature + ' degrees. There is a ' + response.body.current.precip + ' chance of rainfall.')
-            callback(undefined, body.current.weather_descriptions[0] + '.\nThe temperature is ' + body.current.temperature + ' degrees. There is a ' + body.current.precip + ' chance of rainfall.')
+            callback(undefined, body.current.weather_descriptions[0] + '.\nThe temperature is ' + body.current.temperature + ' degrees. There is a ' + body.current.precip + ' chance of rainfall.\nAlso, the wind direction is ' + body.current.wind_dir + '\nObservation time: ' + body.current.observation_time)
         }
     })
 }
