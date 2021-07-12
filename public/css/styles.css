@@ -1,0 +1,62 @@
+/* h1 {
+    color: gray
+}
+img {
+    width: 250px;
+} */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto; /*For the top/bottom and left/right margins respectively*/ 
+    /*The auto left/right margins used above ensures that the left and right side of the page width are balanced relative to the primary element's */ 
+    padding: 0 16px; /*For the top/bottom and left/right margins respectively*/
+    
+    display: flex;
+    flex-direction: column; /*Default is row, so for top-to-bottom design, it's important to change it to column */
+    min-height: 100vh; /*100% view port height*/
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 16px;
+    border: 16px 0;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a { /*Meaning of this CSS is this: for a header, target an anchor*/
+    margin-right: 16px;
+    color: #33FF33;
+    text-decoration: none; /*Ensures no underline for the target*/
+
+}
+
+.potrait {
+    width: 100px; /*Setting the width propety also ensures that the height is changed proportinally*/
+}
+
+input {
+    border: 1px, solid, #CCCCCC; /*The three values of border corresponds to the width, type and colour of the border desired*/
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px, solid, #0000FF;
+    background: #0000CC;
+    color: #FFFFFF;
+    padding: 8px;
+}
