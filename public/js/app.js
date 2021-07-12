@@ -38,7 +38,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'LOADING...'
     messageTwo.textContent = ''
 
-    fetch('http://localhost:3000/weather?location=' + location).then((response) => {
+    fetch('/weather?location=' + location).then((response) => {
     response.json().then((data) => { //the .json() method used would convert the response which is a json object to a parsed object (non-json)
         if (data.error) {
             return messageOne.textContent = data.error
