@@ -1,6 +1,6 @@
 //response = require("../../node_modules/express")
 
-console.log('Client side js script is running.')
+//console.log('Client side js script is running okay.')
 
 //fetch is not defined in JavaScript nor node, and thus would not run in theri scripts, except for a client-sidd JavaScript runtime
 fetch('http://puzzle.mead.io/puzzle').then((response) => {
